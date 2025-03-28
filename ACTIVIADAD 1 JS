@@ -1,0 +1,15 @@
+function proximoEnLaFila(arreglo, elemento) {
+    arreglo.push(elemento); 
+    console.log("Después de agregar:", arreglo); 
+
+    
+    let eliminado = arreglo.shift();
+    console.log("Después de eliminar:", arreglo);
+
+    return eliminado; 
+}
+let miArreglo = [1, 2, 3, 4, 5];
+console.log("Antes de llamar la función:", miArreglo);
+let resultado = proximoEnLaFila(miArreglo, 6);
+console.log("Elemento eliminado:", resultado);
+console.log("Arreglo final:", miArreglo);
